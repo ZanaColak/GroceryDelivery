@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery App</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Product Orders</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Order ID</th>
+        <th>Quantity</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="productOrderTableBody"></tbody>
+</table>
+
+<h2>Add Product Order</h2>
+<form id="addProductOrderForm">
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required>
+    <button type="button" onclick="addProductOrder()">Add Product Order</button>
+</form>
+</body>
+</html>
+l>
