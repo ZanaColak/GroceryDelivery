@@ -16,11 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Set up Java version
-        uses: actions/setup-java@v3
+      - name: Set up Java
+        uses: actions/setup-java@v1
         with:
           java-version: '17'
-          node-version: '16'
+          distribution: 'adopt'
 
       - name: Build with Maven
         run: mvn clean install
